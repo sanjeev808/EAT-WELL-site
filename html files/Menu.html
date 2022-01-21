@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/EATWELL-SITE/css/Food.css">
   <title>Menu </title>
   <style>
     *{
@@ -112,6 +113,20 @@
     margin-left: 2rem;
     font-size: 1.5rem;
 }
+.offer{
+    color: black;
+    background-color: orange;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 488px;
+}
+p::before{
+    content: "flat 50% off for first 5 order for new user";
+
+}
 .btn1{
     display: inline-block;
     text-decoration: none;
@@ -165,12 +180,14 @@
   <h1 class="heading"> <span> Popular dishes </span> </h1>
   
   <ul class="controls">
+      <p class="offer">Flat 50% off first 5 orders for new users </p>
       <li class="buttons active" onclick="filterSelection('all')">all</li>
       <li class="buttons" onclick="filterSelection('sandwich')">sandwich</li>
       <li class="buttons" onclick="filterSelection('cake')">cake</li>
       <li class="buttons" onclick="filterSelection('juice')">juice</li>
       <li class="buttons" onclick="filterSelection('samosa')">Veg Samosa</li>
       <li class="buttons" onclick="filterSelection('noodle')"> Haka Noodle</li>
+      <button class="hero-button pulsate">Offer 60% OFF</button>
       
     
     </ul>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/EATWELL-SITE/css/style.css">
+    <link rel="stylesheet" href="/EATWELL-SITE/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <section class="ftco-section" style="background-color: rgb(233, 242, 252);">
+        <form id="upload-form" onsubmit="handleUploadForm()">
+          <div class="container">
+            <div class="login-wrap p-4 p-md-5">
+              <h1 id="u-upload">Register Your Self As Covid  Patient</h1>
+              <p id="u-upload">Please Fill Correct Information Here.</p>
+              <hr />
+              <div class="form-group">
+                <label for="name"><b>Full Name</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Name"
+                  name="firstName"
+                  id="f_name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Contact No"><b>Contact No</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Number"
+                  name="phone"
+                  id="contactNo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="label" for="subject"><b>Father's Name</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Father's Name"
+                  name="subject"
+                  id="subject"
+                  required
+                />
+              </div>
+              <!--h3  id="u-upload"> Assignment Details</h3-->
+              <div class="form-group">
+                <label for="Title"><b> Occupation</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Labour"
+                  name="title"
+                  id="title"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Description"><b>Hospital Name</b></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="DMC Hospital"
+                  name="description"
+                  id="description"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for=""><b> Address's of Patient</b></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="house no,street,locality"
+                  name="words"
+                  id="words"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Deadline"><b>DOB</b></label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="dd-mm-yyyy"
+                  name="deadline"
+                  id="deadline"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="TimeZone"><b>State</b></label>
+                <div class="field">
+                  <select
+                    name="timezone"
+                    class="form-control"
+                    id="timezone"
+                    type="TimeZone"
+                  >
+                    <option value="" class="Zone">Select your State</option>
+                    <option value="India">PUNJAB</option>
+                    <option value="Sri Lanka"> DELHI</option>
+                    <option value="Australia"> HARYANA</option>
+                    <option value="Phillipines"> UTTARAKHAND</option>
+                    <option value="South Korea">UTTAR PRADESH</option>
+                    <option value="Japan">JAMMU & KASHMIR</option>
+                    <option value="Russia">KARNATKA</option>
+                    <option value="">BENGAL</option>
+                    <option value="More">Other</option>
+                  </select>
+                </div>
+              </div>
+  
+              <h3 id="u-upload">Add COVID-19 Report</h3>
+              <div class="form-group">
+                <div class="col-lg-12">
+                  <span class="btn btn-flat btn-danger fileinput-button "
+                    ><i class="glyphicon glyphicon-plus"></i>
+                    <span>Select COVID Report</span
+                    ><input
+                      class="form-control"
+                      id="id_files"
+                      multiple="true"
+                      name="files"
+                      type="file"
+                      required
+                  /></span>
+                  <div class="fade well" for="id_files" id="dropzone">
+                    <h4 class="text-center">Drop files here</h4>
+                  </div>
+                  <ul class="files" id="files"></ul>
+                  <span class="help-block "></span>
+                </div>
+              </div>
+              <div class="progress" style="display: none;">
+                <div
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="100"
+                  class="progress-bar progress-bar-striped active"
+                  role="progressbar"
+                  style="width:100%"
+                >
+                  Uploading Your Assignment. Please Wait.
+                </div>
+              </div>
+              <p>
+                By Uploading Your Information you agree to our
+                <a href="#">Terms & Privacy</a>.
+              </p>
+              <button
+                class="btn btn-flat text-uppercase btn-danger btn-lg img-center"
+                id="up_btn"
+                type="submit"
+              >
+                Send!
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+</body>
+</html>
